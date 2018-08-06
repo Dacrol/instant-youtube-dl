@@ -8,6 +8,7 @@ EnvGet, USERPROFILE, USERPROFILE
 Text_MenuDL=Get from clipboard
 Menu, Tray, Add, %Text_MenuDL%, YoutubeDL
 Menu, Tray, Default, %Text_MenuDL%
+Menu, Tray, Icon, youtube-dl.ico
 
 !^g:: Gosub, YoutubeDL
 
