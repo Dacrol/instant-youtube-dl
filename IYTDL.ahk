@@ -5,4 +5,12 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 EnvGet, USERPROFILE, USERPROFILE
 
-!^g:: Run, %comspec% /S /K "cd /D %USERPROFILE%/Downloads && youtube-dl %clipboard% && exit"
+Text_MenuDL=Get from clipboard
+Menu, Tray, Add, %Text_MenuDL%, YoutubeDL
+Menu, Tray, Default, %Text_MenuDL%
+
+!^g:: Gosub, YoutubeDL
+
+YoutubeDL:
+Run, %comspec% /S /K "cd /D %USERPROFILE%/Downloads && youtube-dl %clipboard% && exit"
+return
