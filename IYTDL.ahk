@@ -13,8 +13,6 @@ Menu, Tray, Add, %Text_MenuDL_MP3%, YoutubeDL_MP3
 Menu, Tray, Default, %Text_MenuDL%
 Menu, Tray, Icon, youtube-dl.ico
 
-!^g:: Gosub, YoutubeDL
-
 YoutubeDL:
 Run, %comspec% /S /K "cd /D %USERPROFILE%/Downloads && youtube-dl %clipboard% && exit"
 return

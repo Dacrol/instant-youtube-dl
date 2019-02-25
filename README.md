@@ -1,3 +1,3 @@
 ## instant-youtube-dl
 
-Press ctrl+alt+g (or double click tray icon) to launch youtube-dl and download any link from the clipboard. Requires youtube-dl available in path.
+Double (or right click) click tray icon to launch youtube-dl and download any link from the clipboard. Requires youtube-dl available in path.
